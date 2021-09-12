@@ -2,7 +2,7 @@
 <div>
     <draggable :list="tickets">
         <div class="card bg-white mt-3 overflow-auto h-24 rounded-md flex flex-col justify-between" v-for="card in cards" :key="card">
-            <p class="font-medium text-gray-600 px-2 py-1 line-clamp-2 hover:line-clamp-none">
+            <p class="font-medium text-base text-gray-600 px-2 py-1 line-clamp-2 hover:line-clamp-none">
                 {{ card }}
             </p>
 

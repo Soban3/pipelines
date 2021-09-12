@@ -1,5 +1,5 @@
 <template>
-<div class="flex">
+<div class="flex mt-6">
     <div class="pipeline bg-gray-100 p-4 mr-4 w-56 rounded-lg" v-for="pipeline in pipelines" :key="pipeline">
         <span class="uppercase font-semibold text-blue-900 rounded-md bg-gray-200 px-2 py-1">
             {{ pipeline }}
