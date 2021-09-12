@@ -8,9 +8,12 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      lineClamp: ['hover']
+    },
   },
   plugins: [
     require('tailwindcss-debug-screens'),
+    require('@tailwindcss/line-clamp'),
   ],
 }
