@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="w-full border border-black">
+  <div id="app" class="w-full">
     <pipelines :pipelines="pipelines"></pipelines>
   </div>
 </template>
@@ -18,12 +18,10 @@ export default {
         'Time Estimations',
         'Planning',
         'Development',
-        'Testing',
-        'Bug Fixes',
-        'Deployment',
-        'Done',
-        'Blocker',
-        'To be discussed',
+        // 'Testing',
+        // 'Bug Fixes',
+        // 'Deployment',
+        // 'Done',
       ]
     }
   }
