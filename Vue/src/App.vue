@@ -15,15 +15,27 @@ export default {
     data() {
         return {
             pipelines: [
-                'Time Estimations',
-                'Planning',
-                'Development',
-                'Testing',
-                'Bug Fixes',
+                // 'Time Estimations',
+                // 'Planning',
+                // 'Development',
+                // 'Testing',
+                // 'Bug Fixes',
                 // 'Deployment',
                 // 'Done',
             ]
         }
+    },
+    methods: {
+        getPipelines() {
+            this.$axios.get('http://localhost:8000/api/pipelines').then(response => {
+                this.pipelines = response.data.data
+            }).catch(err => {
+                console.log(err)
+            })
+        }
+    },
+    mounted() {
+        this.getPipelines()
     }
 }
 </script>

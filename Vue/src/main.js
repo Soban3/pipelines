@@ -6,6 +6,10 @@ import PerfectScrollbar from 'vue2-perfect-scrollbar'
 import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
 Vue.use(PerfectScrollbar)
 
+import axios from 'axios';
+
+Vue.prototype.$axios = axios
+
 Vue.config.productionTip = false
 
 new Vue({
