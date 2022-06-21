@@ -1,6 +1,6 @@
 <template>
 <div class="cards flex-grow overflow-y-auto my-2">
-  <card :cards="cards" />
+  <card :cards="cards" :pipelineId="pipelineId" />
 </div>
 </template>
 
@@ -8,7 +8,10 @@
 import Card from './Card.vue'
 export default {
   props: {
-    cards: Array
+    cards: Array,
+    pipelineId: {
+      type: Number,
+    }
   },
   components: {
     Card

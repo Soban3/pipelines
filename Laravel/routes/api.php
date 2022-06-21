@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/pipelines', 'PipelineController@getPipelines')->name('get.pipelines');
+Route::post('/pipelines', 'PipelineController@storeCard')->name('store.card');

@@ -10,6 +10,13 @@ class Card extends Model
     use HasFactory;
 
     /**
+     * Fields that are mass assignable
+     * 
+     * @var array
+     */
+    protected $fillable = ['pipeline_id'];
+
+    /**
      * A card belongs to a pipeline
      */
     public function pipeline() {
